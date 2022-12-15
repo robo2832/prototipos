@@ -1,45 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="canonical" href="https://https://demo.themesberg.com/landwind/" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patagonia South West</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title> Ingetelex</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./images/favicons/favicon.ico?12312312312">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="./images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- Meta SEO -->
+    <meta name="title" content="Landwind - Tailwind CSS Landing Page">
+    <meta name="description"
+        content="Get started with a free and open-source landing page built with Tailwind CSS and the Flowbite component library.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Themesberg">
+
+    <!-- Social media share -->
+    <meta property="og:title" content="Landwind - Tailwind CSS Landing Page">
+    <meta property="og:site_name" content="Themesberg">
+    <meta property="og:url" content="https://https://demo.themesberg.com/landwind/">
+    <meta property="og:description"
+        content="Get started with a free and open-source landing page for Tailwind CSS built with the Flowbite component library featuring dark mode, hero sections, pricing cards, and more.">
+    <meta property="og:type" content="">
+    <meta property="og:image"
+        content="https://themesberg.s3.us-east-2.amazonaws.com/public/github/landwind/og-image.png">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@themesberg" />
+    <meta name="twitter:creator" content="@themesberg" />
+
+
+
+
+
+
+    <link href="./output.css" rel="stylesheet">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
+
 <body>
-    <nav>
-        <div class="navbar">
-            <div class="container-img-logo">
-                <img src="./assets/img/logo_navbar-removebg-preview.png" style="width: 50px;" alt="" srcset="">
+    <header>
+        <!-- <header class="fixed w-full px-1"> -->
+
+        <nav
+            class="transition-all duration-300 ease-out delay-75 bg-gray-100 px-2 sm:px-5 py-1 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <img src="./images/logo-nav.jpg" class="mr-3 h-9" alt="Flowbite Logo" />
+                </a>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col items-center space-y-2 md:space-y-0  p-1 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-gray-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#"
+                                class="block py-3 pl-3 pr-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                aria-current="page">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-3 pl-3 pr-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sobre
+                                Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-3 pl-3 pr-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-3 pl-3 pr-3 md:px-3  rounded-lg  text-white bg-gradient-to-br from-ingetelexgreen-400 to-ingetelexblue-600  hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-semibold text-center">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Start block -->
+    <section class="bg-gradient-to-br from-ingetelexblue-500/50 via-ingetelexgreen-200/50 to-ingetelexgreen-500/50 dark:bg-gray-900 py-5">
+        <div class="max-w-screen-xl px-4 py-20 mx-auto md:py-32 lg:px-6">
+            <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12 space-y-10">
+                <h1 data-animate-type="motion-safe:animate-enter-left-1s"
+                    class="js-animate-on-scroll mb-4 text-4xl -top-40  md:text-6xl font-black tracking-tight text-gray-900 dark:text-white">
+                    Soluciones en tecnología, redes y electricidad</h1>
+                <p class="mb-5 font-light leading-6 sm:leading-none text-gray-500 text-xl sm:text-2xl dark:text-gray-400">Somos un grupo de profesionales
+                    chilenos comprometidos con ofrecer un amplio catálogo de soluciones de calidad a nuestros clientes.
+                </p>
+                <button
+                    class=" bg-ingetelexblue-500 inline-flex items-center justify-center p-1 overflow-hidden text-xl md:text-2xl text-white font-medium lg:text-gray-900 rounded-lg group lg:bg-gradient-to-br from-ingetelexgreen-400 to-ingetelexblue-600 group-hover:from-ingetelexgreen-400 group-hover:to-ingetelexblue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+                    <span
+                        class="px-6 py-4 transition-all ease-in duration-75 bg-ingetelexblue-600 lg:bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Conócenos
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- End block -->
+
+    <!-- Start block -->
+    <section class="bg-gradient-to-br from-ingetelexgreen-200/50 via-ingetelexgreen-500/50 to-ingetelexblue-500/50 dark:bg-gray-800">
+        <div class="max-w-screen-xl mx-auto my-auto space-y-12 lg:space-y-20">
+            <h1 class="text-center col-span-12  font-bold text-3xl md:text-5xl self-center">Nuestros servicios</h1>
+            <!-- Row -->
+            <div class="items-center gap-8 lg:grid lg:grid-cols-3 md:gap-10">
+                <div class="hidden lg:block w-auto h-auto mx-auto">
+                    <img class="w-[80%] rounded-lg mx-auto max-w-full h-auto" src="./images/areasinge.png"
+                        alt="dashboard feature image">
+                
+                </div>
+                <div class="sm:text-lg dark:text-gray-400 lg:col-start-2 lg:col-span-2">
+                    <div class="max-w-2xl m-auto h-96 w-full">
+                        <div id="default-carousel" class="relative mt-3" data-carousel="static">
+                          <!-- Carousel wrapper -->
+                          <div class="overflow-hidden relative sm:h-96 h-96 rounded-lg xl:h-96 2xl:h-96">
+                               <!-- Item 1 -->
+                              <div class="inline-flex flex-col items-center hidden duration-700 ease-in-out bg-center bg-no-repeat" style="background-image: url(./images/telecobg.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;" data-carousel-item>
+                                  <!-- <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">Redes y Telecomunicaciones</span> -->
+                                  <h1 class="text-center col-span-12 text-[#52a095] font-bold text-3xl md:text-5xl" style="margin-top: 50px;">Redes y Telecomunicaciones</h1>
+                                  <!-- <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..."> -->
+                                  <ul class="font-bold text-[#52a095]" style="padding-top:40px;">
+                                      <li>Proyecto Zona Sur</li>
+                                      <li>Planta Interna</li>
+                                      <li>Sistema Radio Frecuencias</li>
+                                      <li>Micro Ondas</li>
+                                  </ul>
+
+                              </div>
+                              <!-- Item 2 -->
+                              <div class="hidden duration-700 ease-in-out bg-center bg-no-repeat" style="background-image: url(./images/telecobg.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;" data-carousel-item>
+                                  <!-- <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">Redes y Telecomunicaciones</span> -->
+                                  <h1 class="text-center col-span-12  font-bold text-3xl md:text-5xl" style="margin-top: 50px;">Tecnología</h1>
+                                  <!-- <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..."> -->
+                                  
+                              </div>
+                              <!-- Item 3 -->
+                              <div class="hidden duration-700 ease-in-out bg-center bg-no-repeat" style="background-image: url(./images/obrascivilesbg.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;" data-carousel-item>
+                                <!-- <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">Redes y Telecomunicaciones</span> -->
+                                <h1 class="text-center col-span-12  font-bold text-3xl md:text-5xl" style="margin-top: 50px;">Obras Civiles</h1>
+                                <!-- <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..."> -->
+                                
+                            </div>
+                          </div>
+                          <!-- Slider indicators -->
+                          <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                          </div>
+                          <!-- Slider controls -->
+                          <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                              <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                  <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                  <span class="hidden">Previous</span>
+                              </span>
+                          </button>
+                          <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                              <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                  <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                  <span class="hidden">Next</span>
+                              </span>
+                          </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="bg-gradient-to-br from-ingetelexgreen-500/50 via-ingetelexblue-500/50 to-ingetelexgreen-00/50 dark:bg-gray-900 py-5">
+        <div class="max-w-screen-xl px-4 py-20 mx-auto md:py-32 lg:px-6">
+            <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12 space-y-10">
+                <h1 data-animate-type="motion-safe:animate-enter-left-1s"
+                    class="js-animate-on-scroll mb-4 text-4xl -top-40  md:text-6xl font-black tracking-tight text-gray-900 dark:text-white">
+                    Redes y Telecomunicaciones</h1>
+                <p class="mb-5 font-light leading-6 sm:leading-none text-gray-500 text-xl sm:text-2xl dark:text-gray-400">
+                    Nuestros profesionales cuentan con una amplia trayectoria y reconocimiento, el cual es reflejado en cada un de nuestros proyectos
+                </p>
+                <div class="hidden sm:block w-full lg-rounded">
+                    <img src="./images/telecobg.jpg" alt="" class="rounded-lg">
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between">
+                    <div class="w-full sm:w-1/5 text-gray-500 font-light text-base md:text-xl">
+                        <p>
+                            Instalación y configuración de equipos Ericsson, Huawei, SIAE y Ceragon.
+                            Participamos activamente en instalación de MMOO 4+0 y 2+0 SIAE.
+                        </p>
+                    </div>
+                    <div class="w-full sm:w-1/5 text-gray-500 font-light text-base md:text-xl">
+                        <p>
+                            Mantenimiento, aseo y ornato de las instalaciones.  
+                        </p>
+                    </div>
+                    <div class="w-full sm:w-1/5 text-gray-500 font-light text-base md:text-xl">
+                        <p>
+                            Instalación de racks, canaletas y bandejas marca Legrand.
+                        </p>
+                        <p>
+                            Canalizaciones y cruzadas de Ethernet.
+                        </p>
+                    </div>
+                    <div class="w-full sm:w-1/5 text-gray-500 font-light text-base md:text-xl">
+                        <p>
+                            Instalación de sistema de Radio Frecuencias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row max-w-screen-xl px-4 py-20 mx-auto md:py-32 lg:px-6">
+            <div class="hidden sm:block w-1/2 bg-center bg-no-repeat rounded-lg" style="background-image: url(./images/electricidad.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;" data-carousel-item>
+            </div>
+            <div class="mx-auto my-8 text-center lg:mb-12 space-y-10">
+                <h1 data-animate-type="motion-safe:animate-enter-left-1s"
+                    class="js-animate-on-scroll mb-4 text-4xl -top-40  md:text-6xl font-black tracking-tight text-gray-900 dark:text-white">
+                    Electricidad y Domótica</h1>
+                <div class="flex flex-col justify-between">
+                    <div class="w-1/2 text-gray-500 font-light text-xl text-center mx-auto">
+                        <h2>
+                            Cableado Estructurado.
+                        </h2>
+                        <ul class="list-disc">
+                            <li>
+                                Realización de cableado estructurado casero interno o externo.
+                            </li>
+                            <li>
+                                Instalación, asesoría y mantención de paneles solares y termo solares.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-1/2 text-gray-500 font-light text-xl mx-auto">
+                        <h2>
+                            Trabajos Certificados.
+                        </h2>
+                        <ul class="list-disc">
+                            <li>
+                                Realización de cableado estructurado casero interno o externo.
+                            </li>
+                            <li>
+                                Instalación, asesoría y mantención de paneles solares y termo solares.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row max-w-screen-xl px-4 py-20 mx-auto md:py-32 lg:px-6">
+            <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12 space-y-10">
+                <h1 data-animate-type="motion-safe:animate-enter-left-1s"
+                class="js-animate-on-scroll my-4 text-4xl -top-40  md:text-6xl font-black tracking-tight text-gray-900 dark:text-white">
+                Obras civiles</h1>
+                <div class="flex flex-col justify-between">
+                    <div class="w-1/2 text-gray-500 font-light text-xl">
+                        <h2>
+                            Al Jaime le gusta la tula, dura (8).
+                        </h2>
+                        <ul class="list-disc">
+                            <li>
+                                Se mete los dedos por el *
+                            </li>
+                            <li>
+                                Su fantasía es una peruana enana acróbata.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-1/2 text-gray-500 font-light text-xl">
+                        <h2>
+                            Trabajos Certificados.
+                        </h2>
+                        <ul>
+                            <li>
+                                Le da el medio color haciendo planos.
+                            </li>
+                            <li>
+                                Se hacen radieres a domicilio.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block w-1/2 bg-center bg-no-repeat rounded-lg" style="background-image: url(./images/obrasciviles.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;" data-carousel-item>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="max-w-screen-xl px-4 py-20 mx-auto md:py-32 lg:px-6">
+            <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12 space-y-10">
+                <h1 data-animate-type="motion-safe:animate-enter-left-1s"
+                    class="js-animate-on-scroll mb-4 text-4xl -top-40  md:text-6xl font-black tracking-tight text-gray-900 dark:text-white">
+                    Marcas asociadas.
+                </h1>
+                <div class="grid grid-cols-4 gap-3">
+                    <div class="w-full h-full bg-center bg-no-repeat rounded-lg">
+                        <img src="./images/Ericsson_logo.svg.png" alt="">
+                    </div>
+                    <div class="w-full bg-center bg-no-repeat rounded-lg">
+                        <img src="./images/huawei logo.png" class="object-cover" alt="">
+                    </div>
+                    <div class="w-full bg-center bg-no-repeat rounded-lg">
+                        <img src="./images/SIAEMIC_logo.gif" class="object-cover" alt="">
+                    </div>
+                    <div class="w-full bg-center bg-no-repeat rounded-lg">
+                        <img src="./images/ceragon-logo.png" alt="" srcset="">
+                    </div>
+                    <div class="w-full bg-center bg-no-repeat rounded-lg">
+                        <img src="./images/movistar-logo.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End block -->
+
+
+
+
+    <section
+        class="min-h-screen grid grid-cols-12 container mx-auto px-10 py-14 gap-x-5 place-content-center">
+        <h1 class="text-center col-span-12  font-bold text-3xl md:text-5xl self-center">Nuestros próximos pasos</h1>
+        <p class="col-span-12 mt-3 mb-3 md:mb-1 lg:mt-5 self-center text-gray-700  text-lg sm:text-xl text-center">Planeamos una expansión a través de 4 ejes:</p>
+
+        <article class="col-span-12 grid grid-cols-12 gap-x-5 md:mt-10 xl:mt-5 2xl:mt-5 items-center">
+            <div class="order-2 md:order-1 col-span-12 lg:col-span-7 grid sm:grid-cols-2 gap-7 lg:gap-x-0 md:gap-y-8">
+                <div data-animate-type="motion-safe:animate-enter-left-1s" class="js-animate-on-scroll lg:max-w-[80%] rounded-lg shadow p-5 bg-ingetelexgreen-100 hover:shadow-2xl hover:bg-ingetelexgreen-200 transition duration-300">
+                    <p class="number flex items-end text-5xl font-bold">1<span
+                            class="inline-block bg-ingetelexblue-600 h-1.5 rounded-full w-1.5 mb-1"></span>  </p>
+                    
+                    <div class="py-2 whitespace-no-wrap border-b border-gray-200 text-sm flex flex-nowrap text-black-500 mb-2 justify-between">
+                        <h2 class="text-xl lg:text-2xl font-bold mr-2">Desarrollo Web</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-8 w-8 text-blue-500 align-middle" viewBox="0 0 16 16">
+                            <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+                          </svg>                            
+                    </div>
+                    <p class="text-gray-700 text-lg">Asesorías y desarrollo de páginas web.</p>
+                </div>
+                <div data-animate-type="motion-safe:animate-enter-right-1s" class="js-animate-on-scroll lg:max-w-[80%] rounded-lg shadow p-5 bg-ingetelexgreen-100 hover:shadow-2xl hover:bg-ingetelexgreen-200 transition duration-300">
+                    <p class="number flex items-end text-5xl font-bold">2<span
+                            class="inline-block bg-ingetelexblue-600 h-1.5 rounded-full w-1.5 mb-1"></span>  </p>
+                    
+                    <div class="py-2 whitespace-no-wrap border-b border-gray-200 text-sm flex flex-nowrap text-black-500 mb-2 justify-between">
+                        <h2 class="text-xl lg:text-2xl font-bold mr-2 align-baseline">Data Science</h2>
+                        <svg class="h-8 w-8 text-blue-500 align-middle" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                            <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"/>
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                          </svg>                            
+                    </div>
+                    <p class="text-gray-700 text-lg">Gestión de datos para tu empresa.</p>
+                </div>
+                <div data-animate-type="motion-safe:animate-enter-left-1s" class="js-animate-on-scroll lg:max-w-[80%] rounded-lg shadow p-5 bg-ingetelexgreen-100 hover:shadow-2xl hover:bg-ingetelexgreen-200 transition duration-300">
+                    <p class="number flex items-end text-5xl font-bold">3<span
+                            class="inline-block bg-ingetelexblue-600 h-1.5 rounded-full w-1.5 mb-1"></span>  </p>
+                    
+                    <div class="py-2 whitespace-no-wrap border-b border-gray-200 text-sm flex flex-nowrap text-black-500 mb-2 justify-between">
+                        <h2 class="text-xl lg:text-2xl font-bold mr-2">Domótica</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-8 w-8 text-blue-500 align-middle" viewBox="0 0 16 16">
+                            <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z"/>
+                            <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z"/>
+                          </svg>                          
+                    </div>
+                    <p class="text-gray-700 text-lg">Transformaremos tu hogar en SmartHome.</p>
+                </div>
+                <div data-animate-type="motion-safe:animate-enter-right-1s" class=" js-animate-on-scroll lg:max-w-[80%] rounded-lg shadow p-5 bg-ingetelexgreen-100 hover:shadow-2xl hover:bg-ingetelexgreen-200 transition duration-300">
+                    <p class="number flex items-end text-5xl font-bold">4<span
+                            class="inline-block bg-ingetelexblue-600 h-1.5 rounded-full w-1.5 mb-1"></span>  </p>
+                    
+                    <div class="py-2 whitespace-no-wrap border-b border-gray-200 text-sm flex flex-nowrap text-black-500 mb-2 justify-between">
+                        <h2 class="text-xl lg:text-2xl font-bold mr-2">Redes</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-8 w-8 text-blue-500 align-baseline" viewBox="0 0 16 16">
+                            <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/>
+                          </svg>                         
+                    </div>
+                    <p class="text-gray-700 text-lg">Instalación de sistemas radiantes.</p>
+                </div>
+            </div>
+            <div class="relative hidden md:block max-w-full aspect-[3/2] lg:aspect-square object-cover col-span-12 my-5 md:mb-0 md:mt-0 lg:my-0 lg:col-span-5 rounded-xl shadow-lg lg:h-full order-1">
+
+                <img src="./images/notebook.svg"
+                alt=""
+                class="absolute inset-x-0 bottom-0 w-full">
+
+                <img src="./images/fondo2rocket.svg"
+                alt=""
+                class="js-animate-on-scroll absolute inset-x-24 bottom-12 w-[72%] lg:inset-x-14 lg:bottom-7 lg:w-[71%] mx-auto">
+
+                <img src="./images/fondo1rocket.svg"
+                alt=""
+                class="js-animate-on-scroll absolute inset-x-24 bottom-12 w-[72%] lg:inset-x-14 lg:bottom-7 lg:w-[71%] mx-auto">
+
+                <img src="./images/solorocket.svg"
+                alt=""
+                class="js-animate-on-scroll absolute inset-x-24 bottom-12 w-[25%] lg:inset-x-14 lg:bottom-7 lg:w-[30%] mx-auto top-0"
+                data-animate-type="motion-safe:animate-enter-down-1s">
+            </div>
+        </article>
+
+    </section>
+
+    <!-- Start block -->
+    <section class="bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
+            <figure class="max-w-screen-md mx-auto">
+                <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                        fill="currentColor" />
+                </svg>
+                <blockquote>
+                    <p class="text-xl font-medium text-gray-900 md:text-2xl dark:text-white">"Un quote de Alguien si es necesario."</p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                    <img class="w-6 h-6 rounded-full"
+                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                        alt="profile picture">
+                    <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                        <div class="pr-3 font-medium text-gray-900 dark:text-white">Juan Pérez</div>
+                        <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO</div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- End block -->
+
+    <!-- Start block -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="grid px-4 pt-20 pb-8 mx-auto md:gap-8 xl:gap-0 md:py-16 md:grid-cols-12  md:grid-rows-1 ">
+            <div class="mr-auto place-self-center md:col-span-6 md:col-start-2 ">
+                <h1
+                    class="max-w-2xl mb-4 text-4xl font-extrabold text-center md:text-left leading-none tracking-tight md:text-4xl lg:text-5xl dark:text-white">
+                    Somos <span> <img src="./images/logo-texto.png" /> </span>
+                </h1>
+                <p
+                    class="max-w-2xl mb-6 font-light text-gray-500 md:mb-8  text-lg sm:text-2xl text-center md:text-left dark:text-gray-400">
+                    Especialistas en tecnología, redes y electricidad.</p>
+                <!-- <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+                    <a href="https://github.com/themesberg/landwind" class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                        <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"> <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> View on GitHub
+                    </a> 
+                    <a href="https://www.figma.com/community/file/1125744163617429490" class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                        <svg class="w-4 h-4 mr-2" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="1667" height="2500"><style type="text/css">.st0{fill:#0acf83}.st1{fill:#a259ff}.st2{fill:#f24e1e}.st3{fill:#ff7262}.st4{fill:#1abcfe}</style><title>Figma.logo</title><desc>Created using Figma</desc><path id="path0_fill" class="st0" d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z"/><path id="path1_fill" class="st1" d="M0 150c0-27.6 22.4-50 50-50h50v100H50c-27.6 0-50-22.4-50-50z"/><path id="path1_fill_1_" class="st2" d="M0 50C0 22.4 22.4 0 50 0h50v100H50C22.4 100 0 77.6 0 50z"/><path id="path2_fill" class="st3" d="M100 0h50c27.6 0 50 22.4 50 50s-22.4 50-50 50h-50V0z"/><path id="path3_fill" class="st4" d="M200 150c0 27.6-22.4 50-50 50s-50-22.4-50-50 22.4-50 50-50 50 22.4 50 50z"/></svg> Get Figma file
+                    </a>
+                </div> -->
+            </div>
+
+            <!-- Imagen HERO -->
+            <div id="logo-chip" class="relative transition-transform hidden md:mt-0 md:col-span-4 md:block md:col-end-12">
+                <svg viewBox="57.556 35.914 571.209 656.966" class="fill-gray-500 w-full">
+                    <clipPath id="p2.0">
+                      <path d="m0 0l1280.0 0l0 720.0l-1280.0 0l0 -720.0z" clip-rule="nonzero"></path>
+                    </clipPath>
+                    <g clip-path="url(#p2.0)">
+                      <path d="m148.84126 204.65941l0 0c0 -10.436523 8.4604645 -18.896988 18.896988 -18.896988l326.8017 0c5.0118103 0 9.818329 1.990921 13.362213 5.53479c3.5438538 3.5438843 5.53479 8.350403 5.53479 13.362198l0 326.8017c0 10.436523 -8.46048 18.896973 -18.897003 18.896973l-326.8017 0c-10.436523 0 -18.896988 -8.460449 -18.896988 -18.896973z" fill-rule="evenodd"></path>
+                      <path d="m240.4888 197.14566c-2.456192 0 -2.456192 -0.03779602 -2.493988 -2.4561768c-0.07556152 -5.81929 0.642395 -11.600769 0.3023224 -17.42006c0.18890381 -0.03779602 0.3778839 -0.15115356 0.5667877 -0.15115356c2.1539154 -0.15110779 2.1539154 -0.113357544 2.1539154 -2.229477c0 -30.910156 0 -61.782562 0 -92.69272c0 -2.4184341 0.34007263 -2.1539154 -2.078308 -2.1539154c-13.527908 0 -27.055862 0.03781128 -40.58377 0.03781128c-1.9649506 0 -1.9649506 0 -1.9272003 -2.0027542c0.03781128 -7.9731445 0.03781128 -15.946342 0.113357544 -23.881683c0 -1.1714401 -0.22671509 -1.9271965 -1.3225403 -2.6073456c-2.078308 -1.3225441 -2.7584534 -4.232216 -1.7759857 -6.726204c0.9068756 -2.3805733 3.0607758 -3.6275673 5.743683 -3.3252983c2.4561768 0.26451874 4.156601 1.9271965 4.6479034 4.5722923c0.45343018 2.569538 -0.7557678 5.1013336 -3.0608368 6.083805c-0.94467163 0.3778801 -1.1336365 0.8691139 -1.1336365 1.8137856c0.03779602 7.104084 0.0756073 14.208115 0 21.274391c0 1.3981552 0.3778839 1.7004242 1.7004852 1.6626205c13.9813385 -0.075553894 27.962723 -0.037750244 41.981873 -0.15110779c1.4737091 0 1.9649353 0.26446533 1.9649353 1.8893356c-0.075546265 32.00605 -0.037734985 64.049835 -0.037734985 96.05589c0 0.45343018 0.037734985 0.90686035 0 1.3603516c-0.03781128 0.7179413 0.22671509 0.98246765 0.98246765 0.98246765c1.2847443 0 2.5317383 -0.18896484 3.8165283 0.113357544c0 0.30226135 -0.03779602 0.604599 -0.03779602 0.90686035c-0.22671509 5.7059326 0.45343018 11.411865 0.34007263 17.117783c-0.037750244 1.4737091 -0.49124146 1.9649506 -1.9649506 1.9271393c-2.6828918 -0.0756073 -5.2902374 0 -7.897583 0z" fill-rule="evenodd"></path>
+                      <path d="m283.36826 197.10986c-1.4736938 0.03781128 -1.851593 -0.5667877 -1.8137817 -1.8893433c0.07562256 -2.7584991 0 -5.4792023 0 -8.237717c0 -2.3428192 0 -4.6856537 0 -7.028412c0 -2.871872 0 -2.9852295 2.8718567 -2.8341217c1.5492554 0.0756073 1.9271545 -0.34007263 1.9271545 -1.9271393c-0.03781128 -42.32202 -0.03781128 -84.64403 -0.03781128 -126.966034c0 -1.2847443 -0.15112305 -2.3805733 -0.9824829 -3.5520134c-1.927124 -2.6828995 -0.8690491 -6.7261505 1.851593 -8.124306c2.909668 -1.4737129 6.3861084 -0.3023262 7.5953064 2.6073456c1.3603516 3.2496872 -0.1133728 6.763954 -3.4387207 7.7464256c-1.1713562 0.34007263 -0.8690491 1.0580254 -0.8690491 1.7382317c0 42.208656 0 84.41731 -0.03781128 126.66371c0 1.3981628 0.37789917 1.9649506 1.7760315 1.7382355c1.0580444 -0.15116882 1.3981018 0.2645111 1.3603516 1.3603516c-0.07559204 2.8718567 -0.03781128 5.7059174 -0.03781128 8.577728c0 2.7963104 -0.075531006 5.592575 0 8.388824c0.03781128 1.3603516 -0.49121094 1.7760468 -1.7760315 1.7760468c-2.7962341 -0.113357544 -5.592499 -0.113357544 -8.388794 -0.03781128z" fill-rule="evenodd"></path>
+                      <path d="m202.15364 119.114426c-0.113357544 8.275467 -0.07556152 16.550934 -0.07556152 24.826416c0 10.58049 0 21.12323 -0.03779602 31.70372c0 1.0958252 0.22671509 1.5492554 1.4359589 1.4737091c1.6626282 -0.113357544 3.3630524 0.03779602 5.0634766 -0.03781128c1.0202789 -0.03779602 1.4737549 0.18896484 1.4359589 1.3225555c-0.07556152 2.8718567 -0.03781128 5.7059174 -0.03781128 8.577789c0 2.8340607 -0.037750244 5.7059326 0 8.539993c0 1.1713867 -0.4156189 1.6626129 -1.6248627 1.6248627c-2.9096222 -0.03779602 -5.81929 -0.03779602 -8.691101 0c-1.28479 0.037750244 -1.7004242 -0.4912262 -1.662674 -1.7382202c0.03779602 -2.7963104 0 -5.592575 0 -8.388824c0 -2.9096832 0 -5.81929 0.03779602 -8.728958c0 -0.37782288 -0.22671509 -1.0202332 0.22671509 -1.0958405c1.0958405 -0.2645111 0.79356384 -1.0580292 0.79356384 -1.7004242c0 -17.457794 0 -34.915665 0.037750244 -52.373466c0 -1.3226013 -0.2645111 -1.7004776 -1.6626129 -1.7004776c-17.42006 0.03780365 -34.840103 0.03780365 -52.22235 0c-0.98246765 0 -1.5114594 0.18896484 -1.889328 1.2092438c-0.9069214 2.4183807 -3.0608368 3.4764023 -5.81929 3.1363297c-2.2294617 -0.26451874 -3.9676971 -1.9271393 -4.4211884 -4.269966c-0.49118042 -2.6073456 0.56684875 -5.06353 2.6073456 -6.1971664c2.1161194 -1.1336365 4.987976 -0.83130646 6.4994965 0.9069214c0.71795654 0.8313141 1.4737091 1.0202255 2.493927 1.0202255c18.515884 -0.037750244 37.069565 0 55.58545 -0.075553894c1.3981018 0.113357544 1.9649353 0.3023224 1.9271393 1.9649429z" fill-rule="evenodd"></path>
+                      <path d="m405.9683 87.18385c-1.0580139 0.3023224 -1.0202026 0.9069214 -1.0202026 1.662674c0 15.114975 0 30.230003 0.037750244 45.34497c0 1.4359741 -0.4156494 1.7382355 -1.776001 1.7382355c-10.202667 -0.037750244 -20.405273 0 -30.64569 -0.075546265c-1.5492554 0 -1.8137817 0.45343018 -1.8137817 1.889389c0.03781128 12.167557 0.03781128 24.297302 0.03781128 36.464905c0 2.7207031 0 2.7207031 2.7584534 2.871872c0.15115356 0 0.30233765 0.075546265 0.45343018 0.113357544c0 0.68014526 -0.037750244 1.3225403 -0.037750244 2.0027466c0.1133728 5.40361 0.18890381 10.807205 0.3022766 16.173004c0.03781128 1.3226013 -0.4156189 1.8138428 -1.7759705 1.7760315c-2.9096985 -0.075546265 -5.8193054 -0.075546265 -8.728973 0c-1.284729 0.03781128 -1.5870667 -0.41567993 -1.5492554 -1.7004242c0.113342285 -6.0460052 0.075531006 -12.1298065 0.113342285 -18.175797c1.1336365 -0.3778839 2.3428345 -0.22673035 3.476471 -0.15116882c1.4359131 0.113357544 1.8894043 -0.3022766 1.8894043 -1.8137817c-0.07562256 -13.641266 -0.03781128 -27.244781 -0.07562256 -40.886047c0 -1.28479 0.37786865 -1.6248627 1.6248779 -1.5871277c9.938141 0.03781128 19.914032 0 29.852142 0.07562256c1.4359436 0 1.7760315 -0.4156952 1.7382202 -1.7760468c-0.03781128 -14.208107 -0.03781128 -28.37841 -0.03781128 -42.586517c0 -1.2847443 -0.15109253 -2.3805695 -0.94467163 -3.5520096c-1.851593 -2.7207031 -0.7935486 -6.7261505 1.9649658 -8.086502c2.8718567 -1.4359589 6.3105164 -0.22671509 7.481903 2.569542c1.4359436 3.1741333 -0.037750244 6.726143 -3.3253174 7.708618z" fill-rule="evenodd"></path>
+                      <path d="m329.18478 109.10276c-1.2469788 0.07561493 -1.0958252 0.71800995 -1.0958252 1.5115128c0 12.20536 0 24.41072 0 36.616074c0 9.446915 0 18.893753 -0.03781128 28.340668c0 1.0958252 0.22671509 1.5492554 1.4359131 1.5114594c1.2470093 -0.037750244 2.5317993 -0.18891907 3.8165894 0.113357544c0 0.604599 -0.03778076 1.2092438 -0.03778076 1.8515778c-0.22671509 5.139145 0.45343018 10.278229 0.34005737 15.417297c-0.07556152 2.6829681 0 2.6829681 -2.7585144 2.6829681c-2.2294617 0 -4.4966736 0 -6.726166 0c-2.7207031 0 -2.6828918 0 -2.7585144 -2.8340607c-0.113342285 -5.7059326 0.64242554 -11.374054 0.30233765 -17.079987c0.4156189 -0.03779602 0.79351807 -0.15115356 1.209198 -0.15115356c2.1539001 -0.037750244 2.1539001 -0.037750244 2.1539001 -2.229477c0 -21.501038 0 -43.002136 0 -64.50324c0 -1.3981018 -0.113342285 -2.6073456 -0.94470215 -3.8542786c-1.3981628 -2.1161118 -0.90689087 -5.214691 0.7935486 -6.952919c1.5492554 -1.549324 4.3833313 -1.9649506 6.423889 -0.94467163c2.078308 1.0958328 3.1363525 3.514206 2.6828918 6.159355c-0.45343018 2.5317383 -2.1539001 4.1566086 -4.799011 4.34552z" fill-rule="evenodd"></path>
+                      <path d="m521.32446 175.64653c-2.56958 -0.18890381 -4.383362 -1.6248627 -4.9124146 -4.2699738c-0.22668457 -1.2091827 -0.8312988 -1.246994 -1.77594 -1.246994c-19.498383 0 -38.996735 0 -58.495087 0c-0.49124146 0 -1.0202942 0.07556152 -1.5115051 0.113357544c0 1.8894043 0.075531006 3.7409973 0.03778076 5.6303864c-0.03778076 0.94467163 0.3022766 1.209198 1.209198 1.209198c1.5115051 0 3.0229797 -0.1889801 4.534485 0.113357544c0 0.68014526 0 1.3225403 -0.037750244 2.0026855c-0.22677612 5.101349 0.45343018 10.164886 0.3400879 15.26622c-0.07562256 2.6450958 0 2.682907 -2.7585144 2.682907c-2.2294617 0 -4.4967346 0 -6.7261353 0c-2.7585144 0 -2.7207031 0 -2.7585144 -2.834076c-0.1133728 -5.7059326 0.642395 -11.374054 0.3022461 -17.079987c1.5493469 0.03779602 1.9272156 -0.6801605 1.851593 -2.1916656c-0.15109253 -2.5317383 0 -5.0635376 0 -7.595276c-0.4156189 -1.5493317 0.566864 -1.4737091 1.6248779 -1.4737091c21.236603 0 42.473175 0 63.709747 0.037734985c1.0580444 0 1.927185 -0.18890381 2.8341064 -0.7935028c1.9649048 -1.28479 4.7234497 -0.98246765 6.423889 0.52905273c1.7003784 1.5492554 2.267212 4.383316 1.3225098 6.6506042c-0.8312988 2.1538544 -2.8718262 3.4386597 -5.2146606 3.2496796z" fill-rule="evenodd"></path>
+                      <path d="m453.58408 160.07812c-2.6451416 -0.075546265 -4.6101074 -1.6626129 -5.1391296 -4.383316c-0.18890381 -0.94473267 -0.5289917 -1.1336365 -1.3603516 -1.1336365c-10.467163 0.03779602 -20.934296 0.03779602 -31.401428 0c-1.0958252 0 -1.3603516 0.34007263 -1.3603516 1.3981476c0.03781128 5.9325867 0.03781128 11.827484 0.03781128 17.760117c0 3.2874908 0 3.3253021 3.3252869 3.3253021c1.1336365 0 1.3603516 0.4156189 1.3225403 1.4358978c-0.03781128 2.871872 0 5.7059174 0 8.577728c-0.03781128 -0.075546265 -0.113342285 -0.113357544 -0.18890381 -0.113357544c0.26446533 2.9474182 0.07556152 5.8948975 0.1133728 8.880066c0 0.8691101 -0.37789917 1.3226013 -1.2848206 1.3226013c-3.0985718 0 -6.2349243 0 -9.333496 0c-0.9824829 0 -1.3603516 -0.4534912 -1.3603516 -1.3981628c0.037750244 -2.7962494 0.037750244 -5.59256 0.07556152 -8.4266205c0 0 0 0 0 0c-0.03781128 -0.113357544 -0.03781128 -0.18891907 -0.07556152 -0.3022766c0 -2.7584991 0.07556152 -5.5169525 -0.03781128 -8.275452c-0.03781128 -1.3226013 0.30233765 -1.9272003 1.6626892 -1.6626892c1.3225403 0.22673035 1.5870667 -0.37786865 1.5870667 -1.6248016c-0.03781128 -7.2929993 -0.03781128 -14.585983 -0.03781128 -21.878967c0 -2.456192 -0.18890381 -2.078308 2.1539307 -2.078308c11.751862 0 23.466003 0 35.217957 0c0.8312988 0 1.4736938 -0.0756073 2.1161194 -0.8313751c1.5870667 -1.889328 4.572296 -2.305008 6.7261353 -1.1335754c2.191742 1.209198 3.2875671 4.0054474 2.5317993 6.650589c-0.642395 2.493927 -2.6451416 3.9299011 -5.2902527 3.8920898z" fill-rule="evenodd"></path>
+                      <path d="m324.4727 539.65186c3.0985718 -0.11340332 6.234894 -0.11340332 9.333466 0c1.6248779 0.07556152 1.9649658 0.4156494 2.002777 2.0405273c0.113342285 2.3428345 0.075531006 4.685669 0 7.0284424c0 0.6802368 -0.18899536 1.2848511 -0.68014526 1.8137817c0 2.3051147 -0.03781128 4.6101074 -0.03781128 6.8773804c0 3.0230103 0 3.0985718 -3.060791 2.9851685c-1.5115051 -0.07556152 -1.927185 0.34014893 -1.927185 1.927185c0.03781128 39.563538 0.03781128 79.089294 0.03781128 118.65283c0 2.2294922 0.26449585 2.4939575 2.569519 2.4939575c12.394318 0 24.788605 0 37.220673 0c0.83135986 0 1.5115051 -0.15112305 2.2294617 -0.71795654c1.7382202 -1.28479 3.703186 -1.3981323 5.6681213 -0.5289917c1.9649353 0.8690796 2.8340454 2.5317993 2.9852295 4.6101074c0.22671509 2.9473267 -1.2847595 4.79895 -3.7409973 6.0459595c-1.0202026 0 -2.0404968 0 -3.0607605 0c-1.776001 -0.79351807 -3.3630676 -1.8516235 -3.7409363 -3.8921509c-0.22671509 -1.1713867 -0.7557373 -1.3980713 -1.8138428 -1.3980713c-11.751862 0.037719727 -23.465973 -0.03778076 -35.217896 0.07556152c-2.3806458 0.037719727 -4.156616 -0.5668335 -5.857086 -2.1539307c-0.94467163 -0.90686035 -1.3981018 -1.776001 -1.3981018 -3.0985718c0.03781128 -40.05475 0.03781128 -80.1095 0.03781128 -120.20209c0 -1.2470093 -0.1133728 -2.1160889 -1.6626892 -1.8138428c-1.058075 0.18896484 -1.2469788 -0.37786865 -1.2469788 -1.3225098c0.03778076 -2.8718262 0 -5.7058716 0 -8.577759c-0.4156494 -0.49121094 -0.642395 -1.0202637 -0.68014526 -1.6626587c-0.07562256 -2.4561768 -0.1133728 -4.9124146 0 -7.3307495c0.113342285 -1.4737549 0.49121094 -1.8138428 2.0404968 -1.8516235z" fill-rule="evenodd"></path>
+                      <path d="m413.198 670.69147c0.037750244 -36.162598 0.037750244 -72.32526 0.037750244 -108.487915c0 -0.52905273 -0.037750244 -1.0202637 0 -1.5493164c0.03781128 -0.71795654 -0.26452637 -0.9824829 -0.9824829 -0.9824829c-1.4358826 0.037841797 -2.8717957 -0.07556152 -4.2699585 0.037841797c-1.1336365 0.07556152 -1.5115051 -0.26452637 -1.4737244 -1.4359741c0 -2.8718262 0.18893433 -5.7058716 -0.113342285 -8.577759c0 -2.7207031 0.07556152 -5.4035645 0 -8.124268c-0.03781128 -1.4359741 0.4156189 -2.0405273 1.9271545 -2.0027466c2.7962341 0.07556152 5.630371 0.07556152 8.426636 0c1.3603516 -0.03778076 1.927124 0.45343018 1.8893127 1.8515625c-0.075531006 2.758484 0 5.516968 0 8.275452c-0.037750244 2.8718872 -0.037750244 5.7059326 -0.113342285 8.577759c0 0.4534912 0.22671509 1.133606 -0.26446533 1.2470703c-1.2470093 0.3022461 -0.86917114 1.2091675 -0.86917114 1.927124c0 35.935852 0 71.90961 0 107.84552c0 2.1160278 0.9069214 3.060791 3.0230408 3.060791c9.749176 0 19.498352 0 29.247559 0.037719727c0.94467163 0 1.4358826 -0.22668457 1.8893738 -1.0958252c1.1713867 -2.267212 3.7787476 -3.2496948 6.310486 -2.4939575c2.4184265 0.7180176 3.8165894 2.8340454 3.7409668 5.668152c-0.075531006 2.6073608 -1.7004089 4.647827 -4.005432 5.139099c-2.7207031 0.56677246 -5.13916 -0.45343018 -6.1216125 -2.8340454c-0.45343018 -1.0958252 -1.0580444 -1.2848511 -2.0404968 -1.2848511c-9.333557 0.037841797 -18.704865 -0.07550049 -28.038391 0.07562256c-2.569519 0.03778076 -4.7234497 -0.4156494 -6.7639465 -2.1160889c-0.9824829 -0.7935791 -1.4359131 -1.5115356 -1.4359131 -2.758484z" fill-rule="evenodd"></path>
+                      <path d="m373.22284 539.5687c1.3226013 -0.037841797 1.8138428 0.49121094 1.7760315 1.8137817c-0.03778076 2.7963257 0.03781128 5.630371 0.03781128 8.426636c0 2.909607 -0.03781128 5.819275 0 8.728882c0 0.8312988 -0.22671509 1.3225708 -1.0958252 1.133667c-1.7760315 -0.3400879 -1.9272156 0.6045532 -1.9272156 2.078308c0.03781128 29.77655 0.03781128 59.5531 0 89.32965c0 1.2470093 0.03781128 2.078308 1.5870972 2.3428345c1.1714172 0.18890381 2.0405579 1.133667 2.6073303 2.1916504c1.3981628 2.4940186 0.83132935 5.8571167 -1.284729 7.5197144c-1.8894043 1.5115356 -4.9880066 1.4359741 -6.839569 -0.113342285c-2.078308 -1.776001 -2.6073608 -5.139099 -1.0202942 -7.5197144c0.642395 -0.9824829 0.83135986 -1.8894043 0.83135986 -2.9852295c0 -29.663147 0 -59.326416 -0.03778076 -88.989624c0 -1.2091064 0.5290222 -2.720642 -0.26452637 -3.552002c-0.7557678 -0.75567627 -2.2294922 -0.2267456 -3.400879 -0.2267456c-0.9069214 0 -1.2469788 -0.26446533 -1.2092285 -1.2091675c0.03781128 -2.909607 0 -5.819275 -0.037750244 -8.728882c0 -2.758545 0.07556152 -5.516968 0 -8.275513c-0.03781128 -1.3603516 0.34005737 -1.9649048 1.8137817 -1.927185c2.8718567 0.037841797 5.6681213 0.037841797 8.464386 -0.037719727z" fill-rule="evenodd"></path>
+                      <path d="m460.73712 612.3098c-2.3805847 0.03778076 -4.1944275 -0.52905273 -5.894867 -2.1538696c-0.8691101 -0.83135986 -1.2091675 -1.5870972 -1.2091675 -2.7207031c0.03778076 -12.318726 0.03778076 -24.599731 0.03778076 -36.918457c0 -3.0985718 -0.07559204 -6.2349243 0.037750244 -9.333496c0.03781128 -1.28479 -0.4156189 -1.5870361 -1.5870667 -1.5115356c-0.8691101 0.07556152 -1.7382202 -0.03778076 -2.6073303 0.037841797c-1.0580444 0.07556152 -1.3981628 -0.26452637 -1.3981628 -1.3603516c0.07562256 -2.8718872 0 -5.7059326 0 -8.57782c0 -2.8717651 0.07562256 -5.7059326 0.03781128 -8.577698c0 -1.2092285 0.45343018 -1.6248779 1.6248779 -1.6248779c2.8718567 0.03778076 5.7059326 0.07556152 8.577789 0c1.3225403 -0.037841797 1.8137817 0.4534912 1.7759705 1.776001c-0.03781128 2.7962646 0 5.63031 0.03781128 8.426575c0 2.909668 -0.03781128 5.819275 0 8.729004c0 0.79345703 -0.15115356 1.3225098 -1.0958252 1.1713257c-1.0958252 -0.15112305 -1.3603516 0.3779297 -1.3603516 1.3981934c0.037750244 15.152771 0 30.343384 0.037750244 45.496155c0 1.7382202 0.8691101 2.6073608 2.6073303 2.6073608c12.46991 0 24.901978 0 37.371857 0.03778076c0.94473267 0 1.5493164 -0.22668457 2.078308 -1.0958862c1.3226013 -2.078308 4.118866 -2.7584229 6.5372314 -1.8137817c2.2294922 0.8691406 3.5520935 3.2874756 3.2497559 5.8571167c-0.34005737 2.7207031 -2.1161194 4.6100464 -4.6856384 4.9123535c-2.6073608 0.3022461 -4.987915 -0.9447632 -5.7059326 -3.3630981c-0.4156189 -1.284729 -1.0958252 -1.4359131 -2.191681 -1.4359131c-12.054199 0 -24.18399 -0.07556152 -36.276 0.03778076z" fill-rule="evenodd"></path>
+                      <path d="m241.03906 539.56885c2.7963257 0.07556152 5.6303406 0.07556152 8.426666 0c1.3225098 -0.037841797 1.8137512 0.45343018 1.7759552 1.776062c-0.03779602 2.7962036 0 5.630188 0.03779602 8.426514c0 2.909607 -0.03779602 5.819214 0 8.691162c0 0.9446411 -0.30226135 1.2092285 -1.209137 1.2092285l-4.032028 0.01574707l0.38615417 0.09655762c0.24723816 0.30230713 0.3214569 0.81243896 0.3214569 1.5870972c-0.032958984 29.81427 -0.032958984 59.628784 -0.032958984 89.443054c0 2.078308 0.2966919 1.927124 -1.747406 1.927124c-14.374374 0 -28.78183 0 -43.15622 0c-0.6264496 0 -1.2528076 -0.15118408 -1.8462982 0.22668457c-0.42855835 2.1539917 -1.7144318 3.552124 -3.49469 3.892212c-2.6045227 0.49121094 -4.714554 -0.94470215 -5.439804 -3.6654053c-0.7253418 -2.7962646 0.29670715 -5.819214 2.4066162 -6.915222c2.3407898 -1.2091064 4.7805786 -0.34002686 6.231186 2.267334c13.912857 0 27.792755 0.03778076 41.705612 0.03778076c1.714447 0 1.714447 0 1.714447 -1.9649658c0 -28.302856 0 -56.56787 0 -84.87073l0.14666748 -2.050476l-2.798645 0.010986328c-0.94467163 0 -1.2092285 -0.34014893 -1.2092285 -1.2470093c0.037887573 -2.909607 0 -5.819336 -0.03779602 -8.691162c0 -2.7963257 0.075683594 -5.63031 0.03779602 -8.426514c-0.03779602 -1.3604736 0.491333 -1.776062 1.813858 -1.776062z" fill-rule="evenodd"></path>
+                      <path d="m282.41574 539.56885c2.7962341 0.075683594 5.630249 0.075683594 8.426575 0c1.360321 -0.037841797 1.927124 0.4534912 1.8893433 1.8516235c-0.07559204 2.758545 0 5.516968 0 8.275513c-0.03768921 2.8339844 -0.11340332 5.7059326 -0.03768921 8.539917c0.03768921 1.1714478 -0.3779602 1.4736938 -1.4738159 1.4359131l-4.1132812 0l0.5413208 0.16418457c0.2361145 0.3071289 0.2833557 0.77941895 0.2833557 1.4217529c-0.03768921 26.904785 0 53.80945 -0.03768921 80.71411c0 1.2470093 0.07546997 2.1160889 1.6247864 2.267273c0.9824524 0.07562256 1.7382507 0.79351807 2.3806763 1.5493164c1.851532 2.3049927 1.6248779 6.0081787 -0.49124146 7.9731445c-2.040619 1.8894043 -5.5926514 1.776062 -7.5197754 -0.18902588c-2.0782166 -2.078308 -2.1916199 -5.932556 -0.03781128 -8.048706c0.75579834 -0.79345703 0.9069824 -1.5491943 0.9069824 -2.569519c0 -13.565674 0 -27.169128 0 -40.734924c0 -13.716858 0 -27.471497 0 -41.188354c0 -0.5479126 0.03781128 -0.9446411 0.24084473 -1.2092285l0.44503784 -0.15002441l-3.4055786 0c-1.1336365 0.03778076 -1.4736938 -0.34002686 -1.4736938 -1.4736938c0 -2.8340454 0.18899536 -5.7059326 -0.07559204 -8.539978c0 -2.6829224 0.07559204 -5.3658447 0 -8.086487c-0.03768921 -1.4359131 0.4156494 -2.0406494 1.9272461 -2.0028076z" fill-rule="evenodd"></path>
+                      <path d="m203.4399 559.50354c0.519577 0.29748535 0.8690796 0.86431885 0.8690796 1.6012573c0 10.504883 0 21.047668 0 31.552551c0 10.429382 -0.03779602 20.820862 0.03779602 31.250244c0 1.5115356 -0.30226135 1.9649658 -1.8894501 1.9649658c-17.911179 -0.07562256 -35.822464 -0.03778076 -53.73375 -0.03778076c-0.98246765 0 -1.6248779 0.07556152 -2.0405273 1.2470093c-0.8690796 2.4939575 -3.249771 3.6276245 -6.083786 3.1741943c-2.3428802 -0.37799072 -4.0432434 -2.3428955 -4.2700195 -4.9502563c-0.22677612 -2.758545 1.1714478 -5.0635376 3.4764252 -5.8571167c2.4939728 -0.8312988 5.1769104 -0.037719727 6.4238434 2.1539307c0.529129 0.9069824 1.0959473 1.0958252 2.078308 1.0958252c17.042206 -0.03778076 34.08441 -0.03778076 51.164413 0c1.4737091 0 1.7381592 -0.45343018 1.7381592 -1.8137207c-0.03779602 -19.76294 -0.03779602 -39.525818 -0.03779602 -59.250916c0 -0.45336914 0 -0.9067993 0 -1.3603516c0 -0.3022461 0.03779602 -0.60461426 0.3779602 -0.75579834c0.6800995 -0.34002686 1.3697662 -0.31170654 1.8893433 -0.014038086zm-5.214691 -19.936707c3.0229797 0.03778076 6.0081787 0.03778076 9.031174 0c1.0202637 0 1.5115967 0.45343018 1.4738007 1.4736938c-0.03779602 2.8341064 -0.03779602 5.7059326 -0.07559204 8.540039c-0.3022461 0.642334 -0.22676086 1.284729 -0.22676086 1.9649658c0 2.1538086 -0.03779602 4.2698975 0 6.423828c0 1.0580444 -0.3778534 1.5114746 -1.4359131 1.4736938c-3.363037 -0.03778076 -6.7261963 -0.03778076 -10.089233 -0.07562256c-0.03779602 -6.0459595 -0.07559204 -12.129761 -0.15118408 -18.17572c0 -1.0580444 0.30226135 -1.6248779 1.4737091 -1.6248779z" fill-rule="evenodd"></path>
+                      <path d="m76.06764 319.69302c1.9271393 -4.6479187 6.537239 -5.403595 9.749176 -1.5871277c0.45343018 0.52905273 0.906868 0.5668335 1.4737091 0.5668335c15.757378 0 31.552559 0 47.309937 0c0.8691101 0 1.3981476 -0.18896484 1.246994 -1.1713562c-0.15110779 -1.0581055 0.3778839 -1.2470093 1.3225403 -1.2470093c2.871872 0.037750244 5.7059326 0 8.577805 0c0.37786865 -0.4534912 0.8691101 -0.6802063 1.4737091 -0.6802063c2.5317383 -0.07556152 5.1013336 -0.07556152 7.633072 0c1.2091827 0.03781128 1.7004242 0.7557678 1.7382202 1.8894043c0.0756073 3.1741333 0.113357544 6.3105164 0 9.48465c-0.075546265 1.5870667 -0.41567993 1.9271545 -2.078308 2.002777c-2.3428192 0.113342285 -4.6856384 0.075531006 -7.028473 0c-0.6802063 0 -1.28479 -0.22671509 -1.8138428 -0.6802063c-2.7962494 0 -5.63031 -0.03781128 -8.426575 0.03778076c-1.0202637 0.03781128 -1.5115051 -0.22671509 -1.3981476 -1.3603516c0.0756073 -0.9069214 -0.037750244 -1.851593 0.03779602 -2.7585144c0.07556152 -1.0202026 -0.22671509 -1.4358826 -1.3225403 -1.4358826c-15.568466 0.03778076 -31.136932 0.03778076 -46.70539 0c-0.86911774 0 -1.2091904 0.3022461 -1.5870743 1.0580139c-1.1336365 2.4562378 -3.5520096 3.5142822 -6.23497 2.9474182c-2.267212 -0.49118042 -3.325241 -2.153839 -4.1187973 -4.118805c0 -0.9069214 0 -1.851593 0 -2.7585144c0.03780365 -0.075531006 0.1511612 -0.113342285 0.1511612 -0.18890381z" fill-rule="evenodd"></path>
+                      <path d="m92.08354 495.93777c1.0957718 -0.45343018 1.2091293 -1.0958252 1.2091293 -2.078308c-0.037742615 -15.98407 0 -31.968231 -0.075553894 -47.95233c0 -1.6248779 0.49124146 -1.8893738 1.9649506 -1.8893738c13.187836 0.075531006 26.337914 0.03778076 39.525757 0.03778076c0.642395 0 1.3225403 0.1133728 1.9649353 -0.15115356c-0.075546265 -1.28479 -0.18890381 -2.6073303 0.07556152 -3.8921509c0.18896484 0 0.41567993 0.03781128 0.60458374 0.03781128c5.81929 -0.03781128 11.63858 -0.03781128 17.457855 -0.113342285c1.2847443 0 1.8894043 0.34005737 1.851593 1.7382202c-0.0756073 2.8718567 -0.0756073 5.7059326 0 8.577728c0.03781128 1.2470703 -0.4534912 1.7382507 -1.7004242 1.7005005c-2.7963104 -0.03781128 -5.630371 0 -8.426636 0c-2.1916504 0 -4.383316 -0.03781128 -6.5750427 -0.03781128c-3.4763947 0 -3.4763947 0 -3.2874908 -3.5142212c-0.60458374 -0.03781128 -1.2091827 -0.113342285 -1.8138428 -0.113342285c-12.205353 0 -24.41066 0.037750244 -36.616013 -0.03781128c-1.4359665 0 -1.8893967 0.3022766 -1.8893967 1.8137817c0.075553894 14.66156 0.037750244 29.32309 0 43.9469c0 1.0958252 0.26451874 1.7004089 1.246994 2.3050232c2.1160507 1.28479 2.871811 4.118866 2.0404968 6.6505737c-0.79356384 2.418457 -2.9096146 3.7409973 -5.5925674 3.5520325c-2.4183807 -0.15115356 -4.34552 -1.851593 -4.79895 -4.2321777c-0.5290451 -2.758484 0.52898407 -5.3658447 2.8340607 -6.3483276z" fill-rule="evenodd"></path>
+                      <path d="m135.16328 173.94296c-0.18891907 2.5695343 -1.6248779 4.383316 -4.2699738 4.912369c-1.209198 0.22671509 -1.246994 0.8312988 -1.246994 1.7759705c0 19.498367 0 38.99672 0 58.495087c0 0.4912262 0.075546265 1.0202637 0.113357544 1.5115051c1.889389 0 3.740982 -0.075546265 5.6303864 -0.03779602c0.9446564 0.03779602 1.2091827 -0.3022766 1.2091827 -1.209198c0 -1.5115051 -0.18896484 -3.0229645 0.113357544 -4.534485c0.68014526 0 1.3225555 0 2.0027008 0.037750244c5.1013336 0.22677612 10.164871 -0.45343018 15.266205 -0.34007263c2.6450958 0.0756073 2.682907 0 2.682907 2.7584991c0 2.229477 0 4.49675 0 6.7261505c0 2.7585144 0 2.7207031 -2.8340607 2.7585144c-5.7059326 0.113357544 -11.374069 -0.642395 -17.080002 -0.30226135c0.03781128 -1.5493317 -0.68014526 -1.9272003 -2.1916656 -1.851593c-2.5317383 0.15110779 -5.0635376 0 -7.595276 0c-1.5493164 0.4156189 -1.4737091 -0.56684875 -1.4737091 -1.6248779c0 -21.236588 0 -42.473175 0.037750244 -63.709763c0 -1.0580292 -0.18891144 -1.9271545 -0.79351044 -2.8340607c-1.2847977 -1.9649506 -0.9824753 -4.723465 0.5290451 -6.423889c1.549263 -1.7004242 4.3833313 -2.267212 6.6506042 -1.3225403c2.1538544 0.8312988 3.4386597 2.8718567 3.2496948 5.214691z" fill-rule="evenodd"></path>
+                      <path d="m119.59487 243.96017c-0.075553894 2.6451416 -1.6626205 4.610092 -4.3833237 5.139145c-0.94472504 0.18890381 -1.1336365 0.52897644 -1.1336365 1.3603516c0.03781128 10.467148 0.03781128 20.93428 0 31.401413c0 1.0958252 0.34008026 1.3603516 1.3981628 1.3603516c5.932579 -0.03781128 11.827469 -0.03781128 17.760117 -0.03781128c3.2874756 0 3.3252869 0 3.3252869 -3.3252869c0 -1.1336365 0.41563416 -1.3603516 1.4358978 -1.3225403c2.871872 0.03781128 5.7059326 0 8.577744 0c-0.07556152 0.03781128 -0.113357544 0.113342285 -0.113357544 0.18890381c2.9474182 -0.26446533 5.894882 -0.07556152 8.880051 -0.1133728c0.8691101 0 1.3226013 0.37789917 1.3226013 1.2848206c0 3.0985718 0 6.2349243 0 9.333496c0 0.9824829 -0.4534912 1.3603516 -1.3981476 1.3603516c-2.7962646 -0.037750244 -5.592575 -0.037750244 -8.426636 -0.07556152c0 0 0 0 0 0c-0.113357544 0.03781128 -0.18890381 0.03781128 -0.30226135 0.07556152c-2.7585144 0 -5.5169525 -0.07556152 -8.275467 0.03781128c-1.3226013 0.03781128 -1.9272003 -0.30233765 -1.662674 -1.6626892c0.22671509 -1.3225403 -0.3778839 -1.5870667 -1.6248169 -1.5870667c-7.2929916 0.03781128 -14.585976 0.03781128 -21.878967 0.03781128c-2.4561844 0 -2.0783005 0.18890381 -2.0783005 -2.1539307c0 -11.751862 0 -23.466003 0 -35.217957c0 -0.8312988 -0.07561493 -1.4737091 -0.8313675 -2.1161041c-1.8893356 -1.5870667 -2.3050232 -4.572296 -1.1335831 -6.7261505c1.2091904 -2.1917267 4.0054474 -3.2875671 6.6505966 -2.5317993c2.493927 0.642395 3.9298859 2.6451569 3.8920822 5.2902527z" fill-rule="evenodd"></path>
+                      <path d="m76.06764 403.31424c1.9271393 -4.6479187 6.537239 -5.4036255 9.749176 -1.5871277c0.45343018 0.5290222 0.906868 0.5668335 1.4737091 0.5668335c15.757378 0 31.552559 0 47.309937 0c0.8691101 0 1.3981476 -0.18896484 1.246994 -1.1713867c-0.15110779 -1.058075 0.3778839 -1.2469788 1.3225403 -1.2469788c2.871872 0.037750244 5.7059326 0 8.577805 0c0.37786865 -0.4534912 0.8691101 -0.6802063 1.4737091 -0.6802063c2.5317383 -0.07556152 5.1013336 -0.07556152 7.633072 0c1.2091827 0.03781128 1.7004242 0.7557373 1.7382202 1.8893738c0.0756073 3.1741638 0.113357544 6.310547 0 9.48468c-0.075546265 1.5870667 -0.41567993 1.9271545 -2.078308 2.0027466c-2.3428192 0.1133728 -4.6856384 0.07556152 -7.028473 0c-0.6802063 0 -1.28479 -0.22671509 -1.8138428 -0.6802063c-2.7962494 0 -5.63031 -0.03778076 -8.426575 0.03781128c-1.0202637 0.03781128 -1.5115051 -0.22671509 -1.3981476 -1.3603516c0.0756073 -0.9069214 -0.037750244 -1.851593 0.03779602 -2.7585144c0.07556152 -1.0202026 -0.22671509 -1.4359131 -1.3225403 -1.4359131c-15.568466 0.03781128 -31.136932 0.03781128 -46.70539 0c-0.86911774 0 -1.2091904 0.3022766 -1.5870743 1.0580444c-1.1336365 2.4562378 -3.5520096 3.5142517 -6.23497 2.9474182c-2.267212 -0.49118042 -3.325241 -2.1538696 -4.1187973 -4.118805c0 -0.9069214 0 -1.851593 0 -2.7585144c0.03780365 -0.07556152 0.1511612 -0.1133728 0.1511612 -0.18890381z" fill-rule="evenodd"></path>
+                      <path d="m68.61945 365.6919c0.0756073 1.2470093 0.71800995 1.0958252 1.5115128 1.0958252c12.20536 0 24.41072 0 36.616074 0c9.446907 0 18.89376 0 28.340668 0.03781128c1.0958252 0 1.5492554 -0.22671509 1.5114594 -1.4359131c-0.037750244 -1.2469788 -0.18891907 -2.5317993 0.113357544 -3.8165894c0.604599 0 1.2092438 0.03781128 1.8515778 0.03781128c5.139145 0.22671509 10.278229 -0.45343018 15.417297 -0.3400879c2.6829681 0.07556152 2.6829681 0 2.6829681 2.7585144c0 2.2294922 0 4.496704 0 6.726166c0 2.7207031 0 2.6828918 -2.8340607 2.7585144c-5.7059326 0.1133728 -11.374054 -0.642395 -17.079987 -0.30233765c-0.03779602 -0.4156189 -0.15115356 -0.79348755 -0.15115356 -1.2091675c-0.037750244 -2.1539307 -0.037750244 -2.1539307 -2.229477 -2.1539307c-21.501038 0 -43.002136 0 -64.50324 0c-1.3981018 0 -2.6073456 0.1133728 -3.8542786 0.94473267c-2.1161118 1.3981628 -5.214691 0.90686035 -6.952923 -0.7935791c-1.5493202 -1.5492554 -1.9649467 -4.3833313 -0.9446678 -6.423889c1.0958328 -2.078308 3.5142097 -3.136322 6.159355 -2.6828918c2.5317383 0.45343018 4.1566086 2.1539307 4.34552 4.799011z" fill-rule="evenodd"></path>
+                      <path d="m135.16328 557.1318c-0.18891907 -2.569519 -1.6248779 -4.383301 -4.2699738 -4.9123535c-1.209198 -0.22668457 -1.246994 -0.8312988 -1.246994 -1.776001c0 -19.498352 0 -38.996704 0 -58.495056c0 -0.49124146 0.075546265 -1.0202637 0.113357544 -1.5115051c1.889389 0 3.740982 0.07556152 5.6303864 0.03781128c0.9446564 -0.03781128 1.2091827 0.3022461 1.2091827 1.2091675c0 1.5115356 -0.18896484 3.0229797 0.113357544 4.534485c0.68014526 0 1.3225555 0 2.0027008 -0.037719727c5.1013336 -0.22677612 10.164871 0.45343018 15.266205 0.34005737c2.6450958 -0.07562256 2.682907 0 2.682907 -2.7585144c0 -2.2294617 0 -4.4967346 0 -6.7261353c0 -2.7585144 0 -2.7207031 -2.8340607 -2.7585144c-5.7059326 -0.1133728 -11.374069 0.642395 -17.080002 0.3022766c0.03781128 1.5493164 -0.68014526 1.927185 -2.1916656 1.851593c-2.5317383 -0.15112305 -5.0635376 0 -7.595276 0c-1.5493164 -0.4156494 -1.4737091 0.5668335 -1.4737091 1.6248474c0 21.236603 0 42.473206 0.037750244 63.709778c0 1.0580444 -0.18891144 1.927124 -0.79351044 2.8340454c-1.2847977 1.9649658 -0.9824753 4.7234497 0.5290451 6.423889c1.549263 1.7004395 4.3833313 2.267212 6.6506042 1.3225708c2.1538544 -0.8312988 3.4386597 -2.8718872 3.2496948 -5.2147217z" fill-rule="evenodd"></path>
+                      <path d="m522.1531 326.84085c0.07556152 1.3225403 -0.49121094 1.4737244 -1.5870361 1.4737244c-2.8718872 0 -5.7059326 -0.18890381 -8.57782 0.113342285c-2.7584534 0 -5.4792175 -0.075531006 -8.237671 -0.037750244c-1.1714478 0 -1.6248779 -0.4534912 -1.6248779 -1.6249084c0.03781128 -2.9851685 0.03781128 -6.008209 0 -8.993439c-0.03781128 -1.209198 0.45343018 -1.6248169 1.6248779 -1.6248169c2.7584534 0.037750244 5.4792175 0 8.237671 -0.03781128c2.5317993 0.03781128 5.1013184 0.07556152 7.6330566 0.1133728c2.4561768 0 2.5317993 0 2.418457 2.4183655c-0.07562256 1.4359741 0.26446533 1.8894043 1.8137817 1.8894043c31.703735 -0.03781128 63.40747 -0.03781128 95.148926 0c1.3603516 0 1.776062 -0.3022766 1.776062 -1.7382202c-0.037841797 -17.911255 -0.037841797 -35.86035 0 -53.771637c0 -0.9824829 -0.18890381 -1.6626282 -1.0203247 -2.3428345c-1.8515625 -1.5115051 -2.3427734 -4.421112 -1.284729 -6.7639465c0.94470215 -2.078308 2.9474487 -3.2497406 5.328064 -3.0607758c2.4561768 0.18890381 4.1187744 1.6248627 4.7612305 4.0810394c0.642395 2.4562073 -0.26452637 5.1769104 -2.3428345 6.2727356c-1.133667 0.60458374 -1.28479 1.3225403 -1.28479 2.4183655c0.03778076 19.044952 0 38.089874 0.03778076 57.134735c0 1.5870667 -0.41571045 1.9271545 -1.9649658 1.9271545c-32.875122 -0.037750244 -65.788086 -0.037750244 -98.66321 -0.037750244c-2.1916504 0.037750244 -2.3049927 0.037750244 -2.1916504 2.1916504z" fill-rule="evenodd"></path>
+                      <path d="m583.4444 449.9888c0 -13.905853 0 -27.773834 0 -41.679688c0 -0.8691101 -0.07562256 -1.7759705 0.4156494 -2.6450806c-0.3400879 -0.03781128 -0.49127197 -0.1133728 -0.642395 -0.1133728c-19.951782 0 -39.941406 0 -59.89319 -0.03781128c-1.0581055 0 -1.28479 0.4156189 -1.2470093 1.3225403c0.07556152 1.1336365 -0.03778076 2.2673035 0.037841797 3.3631287c0.07550049 0.94473267 -0.2267456 1.2469788 -1.2092285 1.2091675c-2.9474487 -0.037719727 -5.932617 0 -8.880066 0.03781128c-2.758484 0 -5.5169983 -0.075531006 -8.275452 -0.03781128c-1.1714478 0 -1.6626892 -0.4156189 -1.6248779 -1.6248474c0.03781128 -2.9096375 0.07556152 -5.8192444 0 -8.728912c-0.03781128 -1.3225403 0.566803 -1.6626282 1.7760315 -1.6626282c2.7962646 0.037750244 5.6303406 0 8.426605 0c2.8718262 0 5.7059326 0 8.577759 -0.03781128c0.90686035 0 1.3981323 0.22671509 1.2092285 1.1713867c-0.3400879 1.6626892 0.49121094 1.8894043 1.927124 1.8894043c19.87622 -0.03781128 39.71466 -0.03781128 59.59088 -0.03781128c2.56958 0 3.9677124 1.3981628 3.9677124 3.9677124c0 14.094757 0 28.189514 0 42.28424c0 1.0202637 0.07556152 1.70047 1.3225708 1.8515625c1.2091675 0.15118408 2.1160889 0.9824829 2.7962646 2.002777c1.5870972 2.3806152 1.2469482 5.7437134 -0.79351807 7.5575256c-1.8516235 1.6626587 -5.1013184 1.7760315 -7.104126 0.18890381c-2.1160278 -1.7004395 -2.6828613 -5.0634766 -1.1713867 -7.5196533c0.64245605 -0.7935791 0.7935791 -1.7005005 0.7935791 -2.7207336z" fill-rule="evenodd"></path>
+                      <path d="m592.5887 285.88324c-2.4562378 0.68014526 -5.025818 -0.15115356 -6.121643 -2.267273c-0.6045532 -1.0958252 -1.284729 -1.284729 -2.3806152 -1.284729c-20.027344 0.037750244 -40.016968 0 -60.044373 0c-0.34002686 0 -0.71795654 0.037750244 -1.0579834 0c-0.642395 -0.03781128 -0.9447632 0.22671509 -0.9069214 0.90686035c0.03778076 0.3401184 0 0.7180176 0 1.058075c0 3.5142212 0 3.5142212 -3.5898438 3.5142212c-2.1538696 0 -4.2699585 0.03778076 -6.423889 0.03778076c-2.7584534 -0.03778076 -5.5169373 -0.075531006 -8.237671 -0.03778076c-1.284729 0.03778076 -1.7004089 -0.49124146 -1.7004089 -1.7004395c0.03781128 -2.8340454 0.07556152 -5.7059326 0 -8.539978c-0.03781128 -1.3981018 0.56677246 -1.7381897 1.8137817 -1.7381897c2.6828918 0.037750244 5.403595 -0.03778076 8.086578 -0.03778076c2.9473877 0 5.932617 0.03778076 8.880066 0.03778076c0.5289917 0 1.284729 -0.18896484 1.1335449 0.7557068c-0.26446533 1.5870667 0.642395 1.6626892 1.8516846 1.6626892c20.102905 -0.03781128 40.243652 -0.03781128 60.34662 0c1.133606 0 1.8137817 -0.26452637 2.4561768 -1.2848206c1.2470093 -1.927124 3.854309 -2.569519 6.159363 -1.7759705c2.2294312 0.7557678 3.6654053 2.9474182 3.552063 5.516968c-0.07562256 2.5317383 -1.6248779 4.572296 -3.8165283 5.17688z" fill-rule="evenodd"></path>
+                      <path d="m582.7204 241.21848c-1.927124 4.6479034 -6.5372314 5.40361 -9.749207 1.5871277c-0.45343018 -0.52905273 -0.90686035 -0.56684875 -1.4736938 -0.56684875c-15.757385 0 -31.552551 0 -47.309937 0c-0.8690796 0 -1.3981323 0.18896484 -1.2470093 1.1713867c0.15112305 1.058075 -0.37786865 1.246994 -1.3225098 1.246994c-2.8718872 -0.037750244 -5.7059326 0 -8.57782 0c-0.37786865 0.4534912 -0.8690796 0.6802063 -1.4736938 0.6802063c-2.5317383 0.075546265 -5.101349 0.075546265 -7.633087 0c-1.2091675 -0.03781128 -1.7004089 -0.7557678 -1.7382202 -1.8894043c-0.07559204 -3.1741333 -0.113342285 -6.3105316 0 -9.484665c0.07556152 -1.5870667 0.41567993 -1.9271393 2.078308 -2.0027466c2.3428345 -0.113357544 4.6856384 -0.07556152 7.028473 0c0.6802063 0 1.28479 0.22671509 1.8138428 0.6802063c2.7962646 0 5.63031 0.03779602 8.426575 -0.03781128c1.0202637 -0.03781128 1.5115356 0.22671509 1.3981323 1.3603516c-0.07556152 0.9069214 0.03778076 1.851593 -0.03778076 2.7585144c-0.07556152 1.0202179 0.2267456 1.4358978 1.3225708 1.4358978c15.56842 -0.03779602 31.136902 -0.03779602 46.705383 0c0.8690796 0 1.2091675 -0.30226135 1.5870361 -1.0580139c1.133667 -2.456253 3.552063 -3.5142822 6.2349854 -2.9474335c2.267212 0.49118042 3.3252563 2.1538696 4.1188354 4.11882c0 0.9069214 0 1.8515778 0 2.7584991c-0.037841797 0.07556152 -0.15118408 0.113357544 -0.15118408 0.18891907z" fill-rule="evenodd"></path>
+                      <path d="m523.62476 556.7071c0.18890381 -2.569519 1.6248779 -4.383301 4.2699585 -4.9123535c1.2092285 -0.22668457 1.2470093 -0.8312988 1.2470093 -1.77594c0 -19.498352 0 -38.996735 0 -58.495087c0 -0.49124146 -0.07556152 -1.0202942 -0.113342285 -1.5115356c-1.8894043 0 -3.7410278 0.07556152 -5.630432 0.03781128c-0.9446411 -0.03781128 -1.2091675 0.3022766 -1.2091675 1.209198c0 1.5115051 0.18896484 3.0229492 -0.113342285 4.534485c-0.6801758 0 -1.3225708 0 -2.0026855 -0.037750244c-5.1013794 -0.22677612 -10.164886 0.45343018 -15.266235 0.34005737c-2.645111 -0.07559204 -2.6828918 0 -2.6828918 -2.758484c0 -2.2294922 0 -4.496765 0 -6.726166c0 -2.7585144 0 -2.7207031 2.8340454 -2.7585144c5.7059326 -0.113342285 11.374054 0.642395 17.079987 0.3022766c-0.03778076 1.5493164 0.6801758 1.927185 2.1917114 1.851593c2.5317383 -0.15112305 5.0635376 0 7.595276 0c1.5493164 -0.4156189 1.4736938 0.5668335 1.4736938 1.6248779c0 21.236572 0 42.473175 -0.03778076 63.709747c0 1.0580444 0.18896484 1.927185 0.79351807 2.8341064c1.28479 1.9649048 0.9824829 4.7234497 -0.52905273 6.423828c-1.5492554 1.7004395 -4.383301 2.267212 -6.6505737 1.3225708c-2.1538696 -0.8312988 -3.4386597 -2.8718872 -3.2496948 -5.2147217z" fill-rule="evenodd"></path>
+                      <path d="m539.1932 489.4686c0.07556152 -2.6451416 1.6625977 -4.6101074 4.383301 -5.1391296c0.94470215 -0.18893433 1.133667 -0.5289917 1.133667 -1.3603516c-0.037841797 -10.467163 -0.037841797 -20.934296 0 -31.401428c0 -1.0958557 -0.3400879 -1.3603516 -1.3981934 -1.3603516c-5.932556 0.03778076 -11.827454 0.03778076 -17.760132 0.03778076c-3.2874756 0 -3.3252563 0 -3.3252563 3.3253174c0 1.1336365 -0.4156494 1.3603516 -1.4359131 1.3225403c-2.8718872 -0.03781128 -5.7059326 0 -8.577759 0c0.07556152 -0.03781128 0.11340332 -0.113342285 0.11340332 -0.18890381c-2.9474487 0.26446533 -5.8948975 0.07556152 -8.880066 0.113342285c-0.8691101 0 -1.3226013 -0.37786865 -1.3226013 -1.28479c0 -3.0985718 0 -6.2349243 0 -9.333496c0 -0.9824829 0.4534912 -1.3603516 1.3981323 -1.3603516c2.7962646 0.037750244 5.5925903 0.037750244 8.426636 0.075531006c0 0 0 0 0 0c0.1133728 -0.03778076 0.18893433 -0.03778076 0.3022766 -0.075531006c2.758484 0 5.516968 0.075531006 8.275452 -0.03781128c1.3226318 -0.03781128 1.927185 0.30230713 1.6626587 1.6626892c-0.22668457 1.3225403 0.3779297 1.5870667 1.6248169 1.5870667c7.29303 -0.03781128 14.585999 -0.03781128 21.878967 -0.03781128c2.4561768 0 2.078308 -0.18890381 2.078308 2.1539001c0 11.751892 0 23.466034 0 35.217987c0 0.8312988 0.07562256 1.4736938 0.83135986 2.1160889c1.8893433 1.5870667 2.3050537 4.572296 1.133606 6.726166c-1.2091675 2.1917114 -4.005432 3.2875671 -6.6505737 2.5317993c-2.4939575 -0.642395 -3.9299316 -2.6451416 -3.8920898 -5.2902527z" fill-rule="evenodd"></path>
+                      <path d="m582.7204 368.28934c-1.927124 4.6479187 -6.5372314 5.403595 -9.749207 1.5871277c-0.45343018 -0.52905273 -0.90686035 -0.5668335 -1.4736938 -0.5668335c-15.757385 0 -31.552551 0 -47.309937 0c-0.8690796 0 -1.3981323 0.18896484 -1.2470093 1.1713562c0.15112305 1.0581055 -0.37786865 1.2470093 -1.3225098 1.2470093c-2.8718872 -0.037750244 -5.7059326 0 -8.57782 0c-0.37786865 0.4534912 -0.8690796 0.6802063 -1.4736938 0.6802063c-2.5317383 0.07556152 -5.101349 0.07556152 -7.633087 0c-1.2091675 -0.03781128 -1.7004089 -0.7557678 -1.7382202 -1.8894043c-0.07559204 -3.1741333 -0.113342285 -6.3105164 0 -9.48465c0.07556152 -1.5870667 0.41567993 -1.9271545 2.078308 -2.002777c2.3428345 -0.113342285 4.6856384 -0.075531006 7.028473 0c0.6802063 0 1.28479 0.2267456 1.8138428 0.6802063c2.7962646 0 5.63031 0.03781128 8.426575 -0.03778076c1.0202637 -0.03781128 1.5115356 0.22671509 1.3981323 1.3603516c-0.07556152 0.9069214 0.03778076 1.851593 -0.03778076 2.7585144c-0.07556152 1.0202026 0.2267456 1.4358826 1.3225708 1.4358826c15.56842 -0.03778076 31.136902 -0.03778076 46.705383 0c0.8690796 0 1.2091675 -0.3022461 1.5870361 -1.0580139c1.133667 -2.4562378 3.552063 -3.5142822 6.2349854 -2.9474182c2.267212 0.49118042 3.3252563 2.153839 4.1188354 4.118805c0 0.9069214 0 1.851593 0 2.7585144c-0.037841797 0.07556152 -0.15118408 0.113342285 -0.15118408 0.18890381z" fill-rule="evenodd"></path>
+                    </g>
+                  </svg>
+                <div class="absolute top-0 left-0 h-full w-full grid grid-rows-4 grid-cols-6"> 
+                <img src="./images/logo-altacalidad-sinletras.png" data-animate-type="motion-safe:animate-enter-down-1s" class="js-animate-on-scroll hidden object-contain md:row-span-2 md:row-start-2 md:col-span-4 md:col-start-2 md:ml-2 md:mt-0.5  h-full md:block"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End block -->
+
+
+
+<!-- Contacto -->
+<div class="flex w-full min-h-screen justify-center items-center bg-gray-50">
+    <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0  w-full max-w-4xl p-8 sm:p-12 rounded-xl md:gap-8 text-black overflow-hidden">
+      <div class="flex flex-col space-y-8 justify-between">
+        <div>
+          <h1 class="font-bold text-3xl md:text-5xl tracking-wide">Contacto</h1>
+          <p class="pt-2 text-gray-500 text-base sm:text-2xl">¡Estamos disponibles para atender cualquiera de tus dudas!</p>
+        </div>
+        <div class="flex flex-col space-y-6 pb-10">
+          <div class="inline-flex space-x-2 items-center w-60">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone text-blue-500"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span class="sm:text-xl">+569 12345678</span>
+          </div>
+          <div class="inline-flex space-x-2 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail text-blue-500"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span class="sm:text-xl">ingetelex@ingetelex.com</span>
+          </div>
+          <div class="inline-flex space-x-2 items-center">
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin text-blue-500"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span class="sm:text-xl">Dirección 123. Santiago, Chile</span>
+          </div>
+        </div>      
+      </div>
+      <div class="relative">
+        <div class="relative z-10 bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80">
+          <form class="flex flex-col space-y-4" action="">
+            <div>
+              <label for="" class="text-sm sm:text-xl">Nombre</label>
+              <input type="text" 
+                     placeholder="Tu nombre" 
+                     class="ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-indigo-300">
             </div>
             <div>
-                <ul>
-                    <li><a href="./">Inicio</a></li>
-                    <li><a href="./quienessomos.html">Quienes somos</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
+              <label for="" class="text-sm sm:text-xl">Email</label>
+              <input type="email" 
+                     placeholder="Tu email" 
+                     class="ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-indigo-300">
+            </div>
+            <div>
+              <label for="" class="text-sm sm:text-xl">Enviar</label>
+              <textarea placeholder="Escribe tu mensaje"
+                     rows="4"   
+                     class="ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-indigo-300"></textarea>
+            </div>
+            <button class="inline-block self-end font-extrabold rounded-lg px-6 py-4 uppercase text-sm text-white bg-gradient-to-br from-ingetelexgreen-400 to-ingetelexblue-600  hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 text-center">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- CIERRE CONTACTO -->
+
+
+    <footer class="bg-white dark:bg-gray-800">
+        <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+            <div class="text-center">
+                <a href="#"
+                    class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
+                    <img src="./images/logo-altacalidad.png" class="h-9 mr-3 sm:h-16" alt="Landwind Logo" />
+                </a>
+                <span class="block text-sm text-center text-gray-500 dark:text-gray-400">© 2021-2022 Ingetelex. Todos los derechos reservados.
+                </span>
+                <ul class="flex justify-center mt-5 space-x-5">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <header class="content">
-        <div class="content-container">
-            <h1 class="titulo">PATAGONIA SOUTH-WEST</h1>
-            <div class="article">
-                <img class="content-img" style="width: 100%;" src="./assets/img/imageninicio.jpeg" alt="">
-                <div class="logo_inicio">
-                    <img src="./assets/img/logo psw.png" alt="" srcset="">
-                    <img src="./assets/img/centolla-removebg-preview.png" alt="" srcset="">
-                    <img src="./assets/img/quality_sea_products-removebg-preview.png" alt="" srcset="">
-
-                </div>
+    </footer>
+    <section class="bg-white dark:bg-gray-900 py-5">
+        <div class="max-w-screen-xl px-4 py-20 mx-auto md:py-32 lg:px-6">
+            <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12 space-y-10">
+                <h1 data-animate-type="motion-safe:animate-enter-left-1s"
+                    class="js-animate-on-scroll mb-4 text-4xl -top-40  md:text-6xl font-black tracking-tight text-gray-900 dark:text-white">
+                    Cosas que faltan en la página</h1>
+                <p class="mb-5 font-light leading-6 sm:leading-none text-gray-500 text-xl sm:text-2xl dark:text-gray-400">
+                    Faltan background, si es que se requiere.
+                    falta info de la empresa.
+                    faltan secciones.
+                </p>
             </div>
-            <div>
-                <h2 class="subtitulo">...DE MAGALLANES AL MUNDO</h2>
-            </div>        
-
         </div>
-    </header>
+    </section>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
